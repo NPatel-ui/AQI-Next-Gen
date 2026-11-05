@@ -1,0 +1,13 @@
+FEATURE ENGINEERING REPORT
+==================================================
+Original records: 77,600
+Final records: 77,200
+Removed records: 350
+Cities: 50
+Final columns: 124
+Forecast origin: 2022-08-12 to 2026-11-02
+Target date range: 2022-08-13 to 2026-11-03
+Missing values: 0
+Duplicate city-date records: 0
+Number of model features: 115
+Targets: target_india_aqi_next_day, target_india_aqi_pm_next_day

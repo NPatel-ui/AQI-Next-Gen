@@ -1,0 +1,94 @@
+
+======================================================================
+EXTREME VALUE INVESTIGATION REPORT
+======================================================================
+Total records: 77,600
+Cities analysed: 50
+Start date: 2022-08-05
+End date: 2026-11-03
+City-specific investigation threshold: 99.5th percentile
+
+======================================================================
+POLLUTANT THRESHOLD SUMMARY
+======================================================================
+
+pm2_5_mean
+Global 99th percentile: 141.901
+Global 99.5th percentile: 159.310
+Extreme observations: 400
+Cities affected: 50
+
+pm10_mean
+Global 99th percentile: 273.941
+Global 99.5th percentile: 389.223
+Extreme observations: 399
+Cities affected: 50
+
+no2_mean
+Global 99th percentile: 69.030
+Global 99.5th percentile: 79.950
+Extreme observations: 400
+Cities affected: 50
+
+so2_mean
+Global 99th percentile: 93.650
+Global 99.5th percentile: 128.371
+Extreme observations: 399
+Cities affected: 50
+
+o3_8h_max
+Global 99th percentile: 218.620
+Global 99.5th percentile: 253.381
+Extreme observations: 398
+Cities affected: 50
+
+co_8h_max
+Global 99th percentile: 2492.251
+Global 99.5th percentile: 2989.387
+Extreme observations: 400
+Cities affected: 50
+
+dust_mean
+Global 99th percentile: 421.219
+Global 99.5th percentile: 633.621
+Extreme observations: 400
+Cities affected: 50
+
+aod_mean
+Global 99th percentile: 1.320
+Global 99.5th percentile: 1.490
+Extreme observations: 387
+Cities affected: 50
+
+======================================================================
+CONSECUTIVE EXTREME EVENTS
+======================================================================
+Events lasting at least 2 days: 689
+pm2_5_mean | Raipur | 2022-12-01 to 2022-12-06 | 6 days | Maximum: 157.520
+pm10_mean | Jaipur | 2026-07-10 to 2026-07-15 | 6 days | Maximum: 519.010
+pm10_mean | Raipur | 2022-12-01 to 2022-12-06 | 6 days | Maximum: 225.800
+pm2_5_mean | Amritsar | 2026-01-13 to 2026-01-17 | 5 days | Maximum: 256.460
+pm2_5_mean | Bhubaneswar | 2025-12-30 to 2026-01-03 | 5 days | Maximum: 154.270
+pm2_5_mean | Lucknow | 2025-12-28 to 2026-01-01 | 5 days | Maximum: 225.470
+pm10_mean | Bhubaneswar | 2022-12-19 to 2022-12-23 | 5 days | Maximum: 216.240
+so2_mean | Ahmedabad | 2022-10-11 to 2022-10-15 | 5 days | Maximum: 47.590
+so2_mean | Dehradun | 2025-12-25 to 2025-12-29 | 5 days | Maximum: 33.970
+so2_mean | Pune | 2023-01-20 to 2023-01-24 | 5 days | Maximum: 44.990
+so2_mean | Shimla | 2025-11-18 to 2025-11-22 | 5 days | Maximum: 32.700
+co_8h_max | Chandigarh | 2023-01-07 to 2023-01-11 | 5 days | Maximum: 3952.380
+co_8h_max | Jammu | 2023-01-06 to 2023-01-10 | 5 days | Maximum: 4023.380
+dust_mean | Bhubaneswar | 2023-08-28 to 2023-09-01 | 5 days | Maximum: 117.170
+dust_mean | Jaipur | 2026-07-10 to 2026-07-14 | 5 days | Maximum: 848.120
+aod_mean | Amritsar | 2024-11-10 to 2024-11-14 | 5 days | Maximum: 2.200
+pm2_5_mean | Jammu | 2026-01-12 to 2026-01-15 | 4 days | Maximum: 150.060
+pm2_5_mean | Nagpur | 2022-12-01 to 2022-12-04 | 4 days | Maximum: 127.880
+pm10_mean | Gangtok | 2025-03-09 to 2025-03-12 | 4 days | Maximum: 116.620
+pm10_mean | Guwahati | 2023-01-16 to 2023-01-19 | 4 days | Maximum: 141.410
+
+======================================================================
+IMPORTANT INTERPRETATION
+======================================================================
+These observations are statistical investigation flags, not confirmed errors.
+City-specific thresholds help identify unusual values relative to each city's own distribution.
+No records have been deleted or modified.
+Physical validity and measurement units must be checked against the dataset documentation before filtering.

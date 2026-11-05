@@ -1,0 +1,6 @@
+AQI FORECASTING ERROR ANALYSIS REPORT
+============================================================
+
+      target  records     MAE    RMSE     R2    Bias  extreme_records
+   india_aqi    11600 19.9525 31.0917 0.8091 -0.5188              338
+india_aqi_pm    11600 14.5848 28.3144 0.8399 -0.1492              233

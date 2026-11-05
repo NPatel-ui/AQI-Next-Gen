@@ -1,0 +1,25 @@
+CHRONOLOGICAL DATA SPLIT REPORT
+=======================================================
+Total records: 77,200
+Total unique target dates: 1544
+Total cities: 50
+
+Training records: 54,000
+Training percentage: 69.95%
+Training target dates: 2022-08-13 to 2025-07-27
+
+Validation records: 11,600
+Validation percentage: 15.03%
+Validation target dates: 2025-07-28 to 2026-03-16
+
+Testing records: 11,600
+Testing percentage: 15.03%
+Testing target dates: 2026-03-17 to 2026-11-03
+
+Training missing values: 0
+Validation missing values: 0
+Testing missing values: 0
+
+All splits contain all 50 cities.
+Target dates are chronologically separated.
+No records were randomly shuffled.

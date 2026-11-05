@@ -1,0 +1,9 @@
+ADVANCED AQI EXTREME ERROR ANALYSIS
+=================================================================
+
+      target  test_records  overall_mae  overall_bias  records_above_300  extreme_mae_above_300
+   india_aqi         11600      19.9525       -0.5188                338                73.8024
+india_aqi_pm         11600      14.5848       -0.1492                233                92.1104
+
+Threshold definition: actual AQI > 200, > 300, > 400.
+Underprediction rate measures the percentage of observations where predicted AQI is below actual AQI.

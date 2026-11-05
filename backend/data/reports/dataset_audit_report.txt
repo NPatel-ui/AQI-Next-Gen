@@ -1,0 +1,215 @@
+
+=================================================================
+1. DATASET OVERVIEW
+=================================================================
+Total records                      : 77,600
+Total columns                      : 19
+Unique cities                      : 50
+Start date                         : 2022-08-05 00:00:00
+End date                           : 2026-11-03 00:00:00
+Cities reference records           : 50
+
+Columns:
+- date
+- city
+- pm2_5_mean
+- pm2_5_max
+- pm10_mean
+- pm10_max
+- no2_mean
+- so2_mean
+- o3_8h_max
+- co_8h_max
+- dust_mean
+- aod_mean
+- us_aqi_max
+- hours_available
+- india_aqi
+- india_aqi_category
+- dominant_pollutant
+- india_aqi_pm
+- india_aqi_pm_category
+
+=================================================================
+2. DATA QUALITY
+=================================================================
+Duplicate rows                     : 0
+Duplicate city-date records        : 0
+Missing dates                      : 0
+Missing city names                 : 0
+
+Missing values by column:
+date                                  0 (0.00%)
+city                                  0 (0.00%)
+pm2_5_mean                            0 (0.00%)
+pm2_5_max                             0 (0.00%)
+pm10_mean                             0 (0.00%)
+pm10_max                              0 (0.00%)
+no2_mean                              0 (0.00%)
+so2_mean                              0 (0.00%)
+o3_8h_max                             0 (0.00%)
+co_8h_max                             0 (0.00%)
+dust_mean                             0 (0.00%)
+aod_mean                              0 (0.00%)
+us_aqi_max                            0 (0.00%)
+hours_available                       0 (0.00%)
+india_aqi                             0 (0.00%)
+india_aqi_category                    0 (0.00%)
+dominant_pollutant                    0 (0.00%)
+india_aqi_pm                          0 (0.00%)
+india_aqi_pm_category                 0 (0.00%)
+
+=================================================================
+3. CITY COVERAGE
+=================================================================
+
+City record counts:
+Agartala                  Records:  1552 | 2022-08-05 to 2026-11-03
+Agra                      Records:  1552 | 2022-08-05 to 2026-11-03
+Ahmedabad                 Records:  1552 | 2022-08-05 to 2026-11-03
+Amritsar                  Records:  1552 | 2022-08-05 to 2026-11-03
+Bengaluru                 Records:  1552 | 2022-08-05 to 2026-11-03
+Bhopal                    Records:  1552 | 2022-08-05 to 2026-11-03
+Bhubaneswar               Records:  1552 | 2022-08-05 to 2026-11-03
+Chandigarh                Records:  1552 | 2022-08-05 to 2026-11-03
+Chennai                   Records:  1552 | 2022-08-05 to 2026-11-03
+Coimbatore                Records:  1552 | 2022-08-05 to 2026-11-03
+Dehradun                  Records:  1552 | 2022-08-05 to 2026-11-03
+Delhi                     Records:  1552 | 2022-08-05 to 2026-11-03
+Gangtok                   Records:  1552 | 2022-08-05 to 2026-11-03
+Guwahati                  Records:  1552 | 2022-08-05 to 2026-11-03
+Gwalior                   Records:  1552 | 2022-08-05 to 2026-11-03
+Hyderabad                 Records:  1552 | 2022-08-05 to 2026-11-03
+Imphal                    Records:  1552 | 2022-08-05 to 2026-11-03
+Indore                    Records:  1552 | 2022-08-05 to 2026-11-03
+Jaipur                    Records:  1552 | 2022-08-05 to 2026-11-03
+Jammu                     Records:  1552 | 2022-08-05 to 2026-11-03
+Jodhpur                   Records:  1552 | 2022-08-05 to 2026-11-03
+Kanpur                    Records:  1552 | 2022-08-05 to 2026-11-03
+Kochi                     Records:  1552 | 2022-08-05 to 2026-11-03
+Kolkata                   Records:  1552 | 2022-08-05 to 2026-11-03
+Leh                       Records:  1552 | 2022-08-05 to 2026-11-03
+Lucknow                   Records:  1552 | 2022-08-05 to 2026-11-03
+Ludhiana                  Records:  1552 | 2022-08-05 to 2026-11-03
+Madurai                   Records:  1552 | 2022-08-05 to 2026-11-03
+Mangaluru                 Records:  1552 | 2022-08-05 to 2026-11-03
+Mumbai                    Records:  1552 | 2022-08-05 to 2026-11-03
+Mysuru                    Records:  1552 | 2022-08-05 to 2026-11-03
+Nagpur                    Records:  1552 | 2022-08-05 to 2026-11-03
+Nashik                    Records:  1552 | 2022-08-05 to 2026-11-03
+Panaji                    Records:  1552 | 2022-08-05 to 2026-11-03
+Patna                     Records:  1552 | 2022-08-05 to 2026-11-03
+Port Blair                Records:  1552 | 2022-08-05 to 2026-11-03
+Prayagraj                 Records:  1552 | 2022-08-05 to 2026-11-03
+Puducherry                Records:  1552 | 2022-08-05 to 2026-11-03
+Pune                      Records:  1552 | 2022-08-05 to 2026-11-03
+Raipur                    Records:  1552 | 2022-08-05 to 2026-11-03
+Ranchi                    Records:  1552 | 2022-08-05 to 2026-11-03
+Shillong                  Records:  1552 | 2022-08-05 to 2026-11-03
+Shimla                    Records:  1552 | 2022-08-05 to 2026-11-03
+Srinagar                  Records:  1552 | 2022-08-05 to 2026-11-03
+Surat                     Records:  1552 | 2022-08-05 to 2026-11-03
+Thiruvananthapuram        Records:  1552 | 2022-08-05 to 2026-11-03
+Vadodara                  Records:  1552 | 2022-08-05 to 2026-11-03
+Varanasi                  Records:  1552 | 2022-08-05 to 2026-11-03
+Vijayawada                Records:  1552 | 2022-08-05 to 2026-11-03
+Visakhapatnam             Records:  1552 | 2022-08-05 to 2026-11-03
+
+=================================================================
+4. REQUIRED CITY AVAILABILITY
+=================================================================
+Delhi                              : AVAILABLE
+Gurugram                           : NOT AVAILABLE
+Mumbai                             : AVAILABLE
+Nagpur                             : AVAILABLE
+
+=================================================================
+5. AQI TARGET ANALYSIS
+=================================================================
+
+Target: india_aqi
+Valid records                      : 77600
+Missing records                    : 0
+Minimum                            : 28
+Maximum                            : 500
+Mean                               : 145.9
+Median                             : 140.0
+Standard deviation                 : 65.58
+
+Percentiles:
+    1% : 45.00
+    5% : 57.00
+   25% : 98.00
+   50% : 140.00
+   75% : 178.00
+   95% : 276.00
+   99% : 333.00
+
+Target: india_aqi_pm
+Valid records                      : 77600
+Missing records                    : 0
+Minimum                            : 1
+Maximum                            : 500
+Mean                               : 69.78
+Median                             : 49.0
+Standard deviation                 : 68.89
+
+Percentiles:
+    1% : 5.00
+    5% : 12.00
+   25% : 29.00
+   50% : 49.00
+   75% : 81.00
+   95% : 220.00
+   99% : 332.00
+
+=================================================================
+6. AQI CATEGORY DISTRIBUTION
+=================================================================
+
+india_aqi_category:
+Moderate                     45944 (59.21%)
+Satisfactory                 18323 (23.61%)
+Poor                          8477 (10.92%)
+Very Poor                     2521 (3.25%)
+Good                          2008 (2.59%)
+Severe                         327 (0.42%)
+
+india_aqi_pm_category:
+Good                         39840 (51.34%)
+Satisfactory                 24710 (31.84%)
+Moderate                      8457 (10.90%)
+Poor                          2645 (3.41%)
+Very Poor                     1621 (2.09%)
+Severe                         327 (0.42%)
+
+=================================================================
+7. POLLUTANT ANALYSIS
+=================================================================
+pm2_5_mean           Min: 0.480 | Max: 279.780 | Mean: 35.476
+pm2_5_max            Min: 0.700 | Max: 581.100 | Mean: 52.193
+pm10_mean            Min: 0.620 | Max: 1788.140 | Mean: 56.216
+pm10_max             Min: 1.100 | Max: 3166.500 | Mean: 84.729
+no2_mean             Min: 0.000 | Max: 156.980 | Mean: 15.561
+so2_mean             Min: 0.030 | Max: 505.240 | Mean: 13.136
+o3_8h_max            Min: 17.880 | Max: 715.880 | Mean: 123.297
+co_8h_max            Min: 59.250 | Max: 10595.500 | Mean: 589.309
+dust_mean            Min: 0.000 | Max: 3145.790 | Mean: 25.618
+aod_mean             Min: 0.010 | Max: 3.170 | Mean: 0.456
+
+=================================================================
+8. DOMINANT POLLUTANT DISTRIBUTION
+=================================================================
+O3                      69983 (90.18%)
+PM2.5                    5034 (6.49%)
+PM10                     1444 (1.86%)
+SO2                       927 (1.19%)
+CO                        161 (0.21%)
+NO2                        51 (0.07%)
+
+=================================================================
+9. DAILY DATA CONTINUITY
+=================================================================
+
+Date gap distribution:
+1.0 day(s): 77,550 records

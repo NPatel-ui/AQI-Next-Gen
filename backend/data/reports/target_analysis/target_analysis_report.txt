@@ -1,0 +1,242 @@
+
+===========================================================================
+1. AQI TARGET COMPARISON
+===========================================================================
+
+india_aqi
+count                                     : 77600
+mean                                      : 145.904
+median                                    : 140.0
+std                                       : 65.578
+min                                       : 28
+max                                       : 500
+p95                                       : 276.0
+p99                                       : 333.0
+
+india_aqi_pm
+count                                     : 77600
+mean                                      : 69.779
+median                                    : 49.0
+std                                       : 68.894
+min                                       : 1
+max                                       : 500
+p95                                       : 220.0
+p99                                       : 332.0
+
+===========================================================================
+2. CITY-WISE AQI ANALYSIS
+===========================================================================
+
+Highest average AQI cities:
+Delhi                     Full AQI: 235.47 | PM AQI: 182.38
+Agra                      Full AQI: 233.71 | PM AQI: 191.13
+Amritsar                  Full AQI: 203.98 | PM AQI: 132.05
+Patna                     Full AQI: 199.89 | PM AQI: 121.58
+Ludhiana                  Full AQI: 194.46 | PM AQI: 135.78
+Kanpur                    Full AQI: 194.07 | PM AQI: 136.71
+Prayagraj                 Full AQI: 189.67 | PM AQI: 115.59
+Varanasi                  Full AQI: 188.03 | PM AQI: 112.53
+Lucknow                   Full AQI: 187.19 | PM AQI: 122.02
+Mumbai                    Full AQI: 184.15 | PM AQI: 79.74
+
+Lowest average AQI cities:
+Mysuru                    Full AQI: 115.48 | PM AQI: 31.21
+Madurai                   Full AQI: 115.08 | PM AQI: 41.07
+Mangaluru                 Full AQI: 113.67 | PM AQI: 40.74
+Thiruvananthapuram        Full AQI: 113.60 | PM AQI: 29.94
+Bengaluru                 Full AQI: 113.34 | PM AQI: 35.08
+Panaji                    Full AQI: 109.95 | PM AQI: 39.14
+Coimbatore                Full AQI: 109.12 | PM AQI: 30.14
+Imphal                    Full AQI: 108.85 | PM AQI: 39.05
+Surat                     Full AQI: 107.27 | PM AQI: 77.18
+Port Blair                Full AQI: 81.58 | PM AQI: 18.52
+
+===========================================================================
+3. POLLUTANT AND AQI CORRELATION
+===========================================================================
+
+Correlation with AQI targets:
+
+Target: india_aqi
+o3_8h_max                : 0.8598
+pm2_5_mean               : 0.7433
+pm10_mean                : 0.6796
+co_8h_max                : 0.4884
+aod_mean                 : 0.4038
+dust_mean                : 0.3865
+no2_mean                 : 0.3846
+so2_mean                 : 0.2549
+
+Target: india_aqi_pm
+pm2_5_mean               : 0.9286
+pm10_mean                : 0.8574
+co_8h_max                : 0.5990
+no2_mean                 : 0.5032
+dust_mean                : 0.4863
+aod_mean                 : 0.4723
+o3_8h_max                : 0.4674
+so2_mean                 : 0.3761
+
+===========================================================================
+4. OZONE DOMINANCE ANALYSIS
+===========================================================================
+
+Dominant pollutant percentages:
+O3                       : 90.18%
+PM2.5                    : 6.49%
+PM10                     : 1.86%
+SO2                      : 1.19%
+CO                       : 0.21%
+NO2                      : 0.07%
+Ozone dominant percentage                 : 90.18%
+
+===========================================================================
+5. EXTREME POLLUTANT VALUE INVESTIGATION
+===========================================================================
+
+pm2_5_mean
+Maximum                                   : 279.78
+Upper investigation threshold             : 131.06
+Potential extreme records                 : 1109
+  2023-03-13 | Mumbai | pm2_5_mean=279.780
+  2025-01-10 | Ludhiana | pm2_5_mean=270.000
+  2024-11-14 | Amritsar | pm2_5_mean=260.760
+  2025-01-10 | Delhi | pm2_5_mean=256.730
+  2026-01-16 | Amritsar | pm2_5_mean=256.460
+  2026-01-15 | Amritsar | pm2_5_mean=251.200
+  2023-01-22 | Kolkata | pm2_5_mean=245.830
+  2025-01-24 | Kolkata | pm2_5_mean=242.110
+  2022-12-03 | Delhi | pm2_5_mean=238.080
+  2026-01-13 | Amritsar | pm2_5_mean=237.870
+
+pm10_mean
+Maximum                                   : 1788.14
+Upper investigation threshold             : 194.8
+Potential extreme records                 : 1790
+  2025-05-24 | Agra | pm10_mean=1788.140
+  2025-03-29 | Agra | pm10_mean=1786.280
+  2025-03-05 | Agra | pm10_mean=1531.380
+  2026-05-25 | Agra | pm10_mean=1489.260
+  2025-03-28 | Agra | pm10_mean=1385.660
+  2025-04-29 | Agra | pm10_mean=1321.240
+  2025-06-13 | Agra | pm10_mean=1292.600
+  2025-04-10 | Agra | pm10_mean=1253.990
+  2026-06-11 | Agra | pm10_mean=1251.100
+  2026-05-07 | Agra | pm10_mean=1246.960
+
+no2_mean
+Maximum                                   : 156.98
+Upper investigation threshold             : 58.03
+Potential extreme records                 : 1458
+  2023-01-20 | Surat | no2_mean=156.980
+  2022-12-03 | Delhi | no2_mean=155.800
+  2023-01-09 | Delhi | no2_mean=148.180
+  2022-11-07 | Surat | no2_mean=142.470
+  2022-10-28 | Delhi | no2_mean=141.700
+  2023-02-25 | Surat | no2_mean=140.170
+  2023-01-21 | Kolkata | no2_mean=139.600
+  2023-01-22 | Kolkata | no2_mean=138.400
+  2022-11-28 | Surat | no2_mean=137.350
+  2023-01-02 | Delhi | no2_mean=136.450
+
+so2_mean
+Maximum                                   : 505.24
+Upper investigation threshold             : 45.75
+Potential extreme records                 : 3429
+  2023-01-20 | Surat | so2_mean=505.240
+  2023-02-10 | Surat | so2_mean=492.570
+  2022-11-28 | Surat | so2_mean=438.220
+  2023-01-29 | Surat | so2_mean=431.820
+  2022-11-07 | Surat | so2_mean=427.070
+  2023-03-04 | Surat | so2_mean=411.970
+  2023-02-20 | Surat | so2_mean=383.630
+  2023-02-21 | Surat | so2_mean=382.130
+  2023-03-03 | Surat | so2_mean=381.060
+  2022-12-29 | Surat | so2_mean=364.120
+
+o3_8h_max
+Maximum                                   : 715.88
+Upper investigation threshold             : 306.98
+Potential extreme records                 : 175
+  2023-03-13 | Mumbai | o3_8h_max=715.880
+  2023-04-08 | Mumbai | o3_8h_max=540.120
+  2024-02-26 | Mumbai | o3_8h_max=526.380
+  2026-10-19 | Mumbai | o3_8h_max=523.500
+  2023-03-07 | Mumbai | o3_8h_max=486.120
+  2023-03-14 | Mumbai | o3_8h_max=475.620
+  2023-03-04 | Mumbai | o3_8h_max=475.000
+  2022-11-06 | Mumbai | o3_8h_max=473.380
+  2023-02-16 | Srinagar | o3_8h_max=464.250
+  2026-10-15 | Mumbai | o3_8h_max=461.380
+
+co_8h_max
+Maximum                                   : 10595.5
+Upper investigation threshold             : 1858.12
+Potential extreme records                 : 1971
+  2023-01-03 | Delhi | co_8h_max=10595.500
+  2023-01-02 | Delhi | co_8h_max=9040.380
+  2023-01-24 | Delhi | co_8h_max=8294.880
+  2022-12-04 | Delhi | co_8h_max=8253.880
+  2022-10-16 | Delhi | co_8h_max=8021.750
+  2023-01-10 | Delhi | co_8h_max=7951.250
+  2023-01-06 | Delhi | co_8h_max=7162.380
+  2022-10-30 | Delhi | co_8h_max=6731.750
+  2023-01-09 | Delhi | co_8h_max=6656.500
+  2022-11-10 | Delhi | co_8h_max=6618.120
+
+dust_mean
+Maximum                                   : 3145.79
+Upper investigation threshold             : 60.76
+Potential extreme records                 : 5681
+  2025-05-24 | Agra | dust_mean=3145.790
+  2025-03-29 | Agra | dust_mean=2964.120
+  2026-05-25 | Agra | dust_mean=2504.170
+  2025-03-05 | Agra | dust_mean=2494.830
+  2025-03-28 | Agra | dust_mean=2336.460
+  2025-06-13 | Agra | dust_mean=2269.420
+  2025-04-29 | Agra | dust_mean=2254.170
+  2026-06-11 | Agra | dust_mean=2209.620
+  2025-05-23 | Agra | dust_mean=2175.620
+  2025-04-10 | Agra | dust_mean=2132.170
+
+aod_mean
+Maximum                                   : 3.17
+Upper investigation threshold             : 1.58
+Potential extreme records                 : 274
+  2023-01-05 | Nagpur | aod_mean=3.170
+  2023-01-18 | Kolkata | aod_mean=2.970
+  2023-01-05 | Raipur | aod_mean=2.890
+  2023-01-02 | Ranchi | aod_mean=2.690
+  2024-01-05 | Prayagraj | aod_mean=2.580
+  2024-01-06 | Prayagraj | aod_mean=2.550
+  2022-12-27 | Guwahati | aod_mean=2.540
+  2024-01-06 | Varanasi | aod_mean=2.500
+  2022-12-26 | Guwahati | aod_mean=2.490
+  2025-01-25 | Kolkata | aod_mean=2.480
+
+===========================================================================
+6. SEASONAL AQI ANALYSIS
+===========================================================================
+
+Seasonal averages:
+Monsoon              Full AQI: 113.72 | PM AQI: 43.55
+Post-Monsoon         Full AQI: 152.20 | PM AQI: 79.22
+Summer               Full AQI: 168.80 | PM AQI: 67.94
+Winter               Full AQI: 166.30 | PM AQI: 103.99
+
+===========================================================================
+7. MONTHLY AQI ANALYSIS
+===========================================================================
+
+===========================================================================
+8. RELATIONSHIP BETWEEN AQI TARGETS
+===========================================================================
+Pearson correlation between targets       : 0.7656
+
+===========================================================================
+9. ANALYSIS SUMMARY
+===========================================================================
+Total records analysed                    : 77600
+Cities analysed                           : 50
+Analysis start date                       : 2022-08-05
+Analysis end date                         : 2026-11-03

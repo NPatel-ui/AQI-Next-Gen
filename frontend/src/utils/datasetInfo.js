@@ -1,0 +1,75 @@
+/**
+ * AQI Next-Gen supported city directory.
+ * Names and administrative metadata match data/raw/cities.csv.
+ * Historical averages and city-level model errors are intentionally omitted:
+ * the current API does not expose those statistics.
+ */
+export const ELIGIBLE_CITIES = [
+  { name: 'Delhi', state: 'Delhi', region: 'North' },
+  { name: 'Mumbai', state: 'Maharashtra', region: 'West' },
+  { name: 'Kolkata', state: 'West Bengal', region: 'East' },
+  { name: 'Chennai', state: 'Tamil Nadu', region: 'South' },
+  { name: 'Bengaluru', state: 'Karnataka', region: 'South' },
+  { name: 'Hyderabad', state: 'Telangana', region: 'South' },
+  { name: 'Ahmedabad', state: 'Gujarat', region: 'West' },
+  { name: 'Pune', state: 'Maharashtra', region: 'West' },
+  { name: 'Surat', state: 'Gujarat', region: 'West' },
+  { name: 'Jaipur', state: 'Rajasthan', region: 'North' },
+  { name: 'Lucknow', state: 'Uttar Pradesh', region: 'North' },
+  { name: 'Kanpur', state: 'Uttar Pradesh', region: 'North' },
+  { name: 'Nagpur', state: 'Maharashtra', region: 'West' },
+  { name: 'Indore', state: 'Madhya Pradesh', region: 'Central' },
+  { name: 'Bhopal', state: 'Madhya Pradesh', region: 'Central' },
+  { name: 'Patna', state: 'Bihar', region: 'East' },
+  { name: 'Vadodara', state: 'Gujarat', region: 'West' },
+  { name: 'Ludhiana', state: 'Punjab', region: 'North' },
+  { name: 'Agra', state: 'Uttar Pradesh', region: 'North' },
+  { name: 'Nashik', state: 'Maharashtra', region: 'West' },
+  { name: 'Varanasi', state: 'Uttar Pradesh', region: 'North' },
+  { name: 'Srinagar', state: 'Jammu and Kashmir', region: 'North' },
+  { name: 'Amritsar', state: 'Punjab', region: 'North' },
+  { name: 'Prayagraj', state: 'Uttar Pradesh', region: 'North' },
+  { name: 'Ranchi', state: 'Jharkhand', region: 'East' },
+  { name: 'Coimbatore', state: 'Tamil Nadu', region: 'South' },
+  { name: 'Madurai', state: 'Tamil Nadu', region: 'South' },
+  { name: 'Visakhapatnam', state: 'Andhra Pradesh', region: 'South' },
+  { name: 'Vijayawada', state: 'Andhra Pradesh', region: 'South' },
+  { name: 'Kochi', state: 'Kerala', region: 'South' },
+  { name: 'Thiruvananthapuram', state: 'Kerala', region: 'South' },
+  { name: 'Guwahati', state: 'Assam', region: 'Northeast' },
+  { name: 'Bhubaneswar', state: 'Odisha', region: 'East' },
+  { name: 'Raipur', state: 'Chhattisgarh', region: 'Central' },
+  { name: 'Chandigarh', state: 'Chandigarh', region: 'North' },
+  { name: 'Dehradun', state: 'Uttarakhand', region: 'North' },
+  { name: 'Shimla', state: 'Himachal Pradesh', region: 'North' },
+  { name: 'Jammu', state: 'Jammu and Kashmir', region: 'North' },
+  { name: 'Jodhpur', state: 'Rajasthan', region: 'North' },
+  { name: 'Gwalior', state: 'Madhya Pradesh', region: 'Central' },
+  { name: 'Mysuru', state: 'Karnataka', region: 'South' },
+  { name: 'Mangaluru', state: 'Karnataka', region: 'South' },
+  { name: 'Puducherry', state: 'Puducherry', region: 'South' },
+  { name: 'Panaji', state: 'Goa', region: 'West' },
+  { name: 'Shillong', state: 'Meghalaya', region: 'Northeast' },
+  { name: 'Imphal', state: 'Manipur', region: 'Northeast' },
+  { name: 'Agartala', state: 'Tripura', region: 'Northeast' },
+  { name: 'Gangtok', state: 'Sikkim', region: 'Northeast' },
+  { name: 'Leh', state: 'Ladakh', region: 'North' },
+  { name: 'Port Blair', state: 'Andaman and Nicobar Islands', region: 'Islands' }
+];
+
+export const MODEL_BENCHMARKS = [
+  {
+    model: 'HistGradientBoosting Regressor — Full India AQI',
+    mae: 19.9525,
+    rmse: 31.0917,
+    r2: 0.8091,
+    features: 118,
+  },
+  {
+    model: 'HistGradientBoosting Regressor — PM AQI',
+    mae: 14.5848,
+    rmse: 28.3144,
+    r2: 0.8399,
+    features: 118,
+  },
+];

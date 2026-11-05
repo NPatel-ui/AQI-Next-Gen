@@ -1,0 +1,22 @@
+{
+    "india_aqi": {
+        "best_model": "HistGradientBoosting",
+        "validation_mae": 18.458120353685345,
+        "test_metrics": {
+            "MAE": 19.95245083705849,
+            "RMSE": 31.091680034936708,
+            "R2": 0.8090524983464344
+        },
+        "model_path": "C:\\Users\\LENOVO\\OneDrive\\Desktop\\AQI Next-Gen\\models\\initial_models\\india_aqi_best_model.joblib"
+    },
+    "india_aqi_pm": {
+        "best_model": "HistGradientBoosting",
+        "validation_mae": 16.3757020233203,
+        "test_metrics": {
+            "MAE": 14.584763014676746,
+            "RMSE": 28.31442903493398,
+            "R2": 0.839880930643097
+        },
+        "model_path": "C:\\Users\\LENOVO\\OneDrive\\Desktop\\AQI Next-Gen\\models\\initial_models\\india_aqi_pm_best_model.joblib"
+    }
+}

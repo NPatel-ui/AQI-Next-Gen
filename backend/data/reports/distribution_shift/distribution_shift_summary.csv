@@ -1,0 +1,3 @@
+target,total_records,train_above_300,validation_above_300,test_above_300,test_exactly_500
+india_aqi,77200,1943,566,338,115
+india_aqi_pm,77200,1257,458,233,115

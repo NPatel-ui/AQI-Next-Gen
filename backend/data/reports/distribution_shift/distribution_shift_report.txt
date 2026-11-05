@@ -1,0 +1,12 @@
+AQI TEMPORAL AND DISTRIBUTION SHIFT REPORT
+======================================================================
+
+Total records: 77,200
+Unique cities: 50
+Target date range: 2022-08-13 to 2026-11-03
+
+      target  total_records  train_above_300  validation_above_300  test_above_300  test_exactly_500
+   india_aqi          77200             1943                   566             338               115
+india_aqi_pm          77200             1257                   458             233               115
+
+AQI 500 is examined as an exact recorded value. Its presence alone does not prove that a record is erroneous or that the underlying pollutant concentration was capped.

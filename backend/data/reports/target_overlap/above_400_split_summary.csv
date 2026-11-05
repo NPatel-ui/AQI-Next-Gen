@@ -1,0 +1,4 @@
+split,full_above_400,pm_above_400,overlap
+test,152,152,152
+train,155,155,155
+validation,20,20,20
