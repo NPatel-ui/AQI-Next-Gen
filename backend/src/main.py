@@ -12,9 +12,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 
-# ==================================================
+
 # PATH CONFIGURATION
-# ==================================================
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -27,9 +27,9 @@ DATA_FILE = ROOT / "data" / "processed" / "merged_daily.csv"
 STAGING_FILE = ROOT / "data" / "staging" / "all_cities_api_daily_staging.csv"
 
 
-# ==================================================
+
 # FEATURE CONFIGURATION
-# ==================================================
+
 
 POLLUTION_COLUMNS = [
     "india_aqi",
@@ -65,9 +65,9 @@ LAG_PERIODS = [1, 3, 7]
 ROLLING_WINDOWS = [3, 7]
 
 
-# ==================================================
+
 # LOAD TRAINED MODELS
-# ==================================================
+
 
 try:
     full_aqi_model = joblib.load(FULL_MODEL_PATH)
@@ -82,9 +82,9 @@ except Exception as error:
     ) from error
 
 
-# ==================================================
+
 # LOAD AND COMBINE HISTORICAL + LATEST API DATA
-# ==================================================
+
 
 try:
     historical_data = pd.read_csv(
@@ -182,9 +182,9 @@ if missing_columns:
     )
 
 
-# ==================================================
+
 # FASTAPI APPLICATION
-# ==================================================
+
 
 app = FastAPI(
     title="AQI Next-Gen API",
@@ -204,9 +204,9 @@ app.add_middleware(
 )
 
 
-# ==================================================
+
 # REQUEST SCHEMAS
-# ==================================================
+
 
 class ForecastRequest(BaseModel):
     model: Literal["full", "pm", "both"] = "both"
@@ -230,9 +230,9 @@ class CityDateForecastRequest(BaseModel):
     )
 
 
-# ==================================================
+
 # MODEL PREDICTION
-# ==================================================
+
 
 def validate_features(
     supplied_features: dict[str, Any],
@@ -330,9 +330,9 @@ def predict_both_models(features):
     }
 
 
-# ==================================================
+
 # AUTOMATIC FEATURE ENGINEERING
-# ==================================================
+
 
 def prepare_city_features(city_name, forecast_date):
 
@@ -500,9 +500,9 @@ def prepare_city_features(city_name, forecast_date):
     return model_input, history, issue_date
 
 
-# ==================================================
+
 # ROUTES
-# ==================================================
+
 
 @app.get("/")
 def home():
@@ -633,9 +633,9 @@ def forecast_by_city_date(
 
 
 
-# ==================================================
+
 # HISTORICAL ANALYTICS
-# ==================================================
+
 
 ANALYTICS_POLLUTANTS = {
     "pm2_5_mean": {"label": "PM2.5", "unit": "µg/m³"},
