@@ -1,0 +1,53 @@
+name: Update AQI API Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs daily at 01:30 UTC (07:00 IST).
+    - cron: "30 1 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-aqi-data
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install updater dependency
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pandas
+
+      - name: Fetch and merge latest AQI data
+        run: python backend/src/daily_data_updater.py
+
+      - name: Commit updated staging data
+        run: |
+          if git diff --quiet -- backend/data/staging/; then
+            echo "No staging data changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add backend/data/staging/all_cities_api_daily_staging.csv
+          git add backend/data/staging/daily_update_errors.csv
+          git add backend/data/staging/nagpur_api_validation.csv
+          git commit -m "Update daily AQI API staging data"
+          git push origin main
