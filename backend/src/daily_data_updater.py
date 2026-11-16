@@ -484,9 +484,25 @@ def main():
         all_cities = pd.concat(successful_frames, ignore_index=True)
 
         all_cities["date"] = pd.to_datetime(all_cities["date"])
-        all_cities = all_cities.sort_values(
-            ["city", "date"]
-        ).reset_index(drop=True)
+
+        # Preserve earlier API records and update overlapping city-date rows.
+        if OUTPUT_FILE.exists():
+            existing_data = pd.read_csv(
+                OUTPUT_FILE,
+                parse_dates=["date"],
+            )
+            all_cities = pd.concat(
+                [existing_data, all_cities],
+                ignore_index=True,
+                sort=False,
+            )
+
+        all_cities = (
+            all_cities
+            .drop_duplicates(subset=["city", "date"], keep="last")
+            .sort_values(["city", "date"])
+            .reset_index(drop=True)
+        )
 
         all_cities.to_csv(OUTPUT_FILE, index=False)
 
