@@ -275,7 +275,7 @@ def fetch_city_daily(city_row):
             ),
             "hourly": "relative_humidity_2m",
             "timezone": TIMEZONE,
-            "past_days": 2,
+            "past_days": 10,
             "forecast_days": 2,
         },
     )
