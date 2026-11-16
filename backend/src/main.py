@@ -376,28 +376,30 @@ def prepare_city_features(city_name, forecast_date):
 
     actual_dates = pd.DatetimeIndex(history["date"])
 
-   if not actual_dates.equals(expected_dates):
-    missing_dates = expected_dates.difference(actual_dates)
+  
+    if not actual_dates.equals(expected_dates):
+        missing_dates = expected_dates.difference(actual_dates)
 
-    raise HTTPException(
-        status_code=422,
-        detail={
-            "message": "Historical data has missing dates.",
-            "city": city_name,
-            "required_dates": [
-                d.strftime("%Y-%m-%d")
-                for d in expected_dates
-            ],
-            "available_dates": [
-                d.strftime("%Y-%m-%d")
-                for d in actual_dates
-            ],
-            "missing_dates": [
-                d.strftime("%Y-%m-%d")
-                for d in missing_dates
-            ],
-        }
-    )
+        raise HTTPException(
+            status_code=422,
+            detail={
+                "message": "Historical data has missing dates.",
+                "city": city_name,
+                "required_dates": [
+                    d.strftime("%Y-%m-%d")
+                    for d in expected_dates
+                ],
+                "available_dates": [
+                    d.strftime("%Y-%m-%d")
+                    for d in actual_dates
+                ],
+                "missing_dates": [
+                    d.strftime("%Y-%m-%d")
+                    for d in missing_dates
+                ],
+            }
+        )
+
 
     if history["date"].duplicated().any():
         raise HTTPException(
