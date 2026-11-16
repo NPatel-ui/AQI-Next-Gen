@@ -202,7 +202,7 @@ def fetch_city_daily(city_row):
             ),
             "timezone": TIMEZONE,
             # Three past days ensure rolling 8-hour windows cross midnight.
-            "past_days": 3,
+            "past_days": 10,
             "forecast_days": 2,
         },
     )
