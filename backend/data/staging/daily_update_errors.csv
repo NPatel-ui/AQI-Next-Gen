@@ -1,0 +1,2 @@
+city,error
+Delhi,API request failed after 3 attempts: <urlopen error _ssl.c:1001: The handshake operation timed out>
